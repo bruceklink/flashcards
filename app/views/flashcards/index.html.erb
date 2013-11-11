@@ -1,51 +1,12 @@
-<ul>
-  <li>
-    <img width="200" src="<%= @image_url %>">
-    <h3> <%= @first_name %> <%= @last_name %> </h3>
-  </li>
-  <li>
-    <img width='200' src='https://www.kellogg.northwestern.edu/images/students/all/x410579.jpg'>
-    <h3>Ty Benefiel</h3>
-    </li>
-  <li>
-    <img width='200' src='https://www.kellogg.northwestern.edu/images/students/all/x417523.jpg'>
-    <h3>Nick Chin</h3>
-  </li>
-</ul>
-
 
 <ul>
   <% @students.each do |number| %>
     <li>
-      <img width="200" src="<%= number["image_url"] %>"
-    </li>
-    <li>
+      <img width="200" src="<%= number["image_url"] %>">
       <%= number["first_name"] %> 
       <%= number["last_name"]%>
     </li>
-    <li><%= @first_name %></li>
   <% end %>
 </ul>
 
 
-
-<div>
-<%= @first_name %>
-</div>
-
-<div>
-<%= @last_name %>
-</div>
-
-<li>
- <img width="200" src="<%= @image_url %>">
- <h3> <%= @first_name %> <%= @last_name %> </h3>
-</li>
-
-
-    <h3>Jocelyn Alt</h3>
-
-
-#<div>
-#<img src<%= @image_url %>
-#</div>
