@@ -15,8 +15,15 @@
 
 
 <ul>
-  <% @parsed_data.each do |number| %>
-    <li><%= number %></li>
+  <% @students.each do |number| %>
+    <li>
+      <img width="200" src="<%= number["image_url"] %>"
+    </li>
+    <li>
+      <%= number["first_name"] %> 
+      <%= number["last_name"]%>
+    </li>
+    <li><%= @first_name %></li>
   <% end %>
 </ul>
 
